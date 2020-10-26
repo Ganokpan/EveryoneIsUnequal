@@ -1,0 +1,209 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everyeon is (UN) equal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="header"><img src="img/ui/logo.svg" /></div>
+    <div class="btn-credit bor-peach"></div>
+    <div class="container-fluid credit cl-navy">
+      <p>
+        เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
+        คณะสถาปัตยกรรมศาสตร์
+      </p>
+      <p>
+        และการโปรแกรมและสื่อประสม แขนงวิชาการพัฒนาสื่อประสมและเกม
+        คณะเทคโนโลยีสารสนเทศ
+      </p>
+      <p>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020</p>
+    </div>
+    <div
+      class="page7 container-fluid content bg-pale-pink"
+      style="text-align: center; margin: auto"
+    >
+      <p class="empty fade01 subhead cl-navy">ไหนมาลองทำความเข้าใจกันหน่อย</p>
+      <p class="empty fade02 subhead cl-peach" style="margin-bottom: 0px">
+        คุณคิดว่าผู้หญิงควรได้รับ
+      </p>
+      <p class="empty fade02 subhead cl-peach">
+        ค่าตอบแทนจากการทำงานบ้านหรือไม่?
+      </p>
+      <a class="btn btn-navy-yellow" id="start_quiz" href="#" role="button"
+        >เริ่มเลย</a
+      >
+      <div
+        class="empty quiz container bg-navy"
+        style="width: 60%; border-radius: 15px; padding: 50px"
+      >
+        <div
+          id="progress"
+          class="bg-yellow"
+          style="width: 100%; margin-bottom: 20px"
+        >
+          <div
+            id="pro_bar"
+            class="bg-red"
+            style="width: 100%; height: 40px"
+          ></div>
+        </div>
+
+        <span id="timer" class="cl-peach">
+          <span id="time" class="time">10</span>
+        </span>
+        <div class="row" style="margin-top: 20px">
+          <div class="col">
+            <a class="btn btn-pink-navy" id="btn_yes" href="#" role="button"
+              >ใช่</a
+            >
+          </div>
+          <div class="col">
+            <a class="btn btn-pink-navy" id="btn_nope" href="#" role="button"
+              >ไม่ใช่</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid content bg-pale-pink"
+      style="text-align: center"
+      id="wrong_ans"
+    >
+      <p class="head cl-navy">ว๊า! แย่จัง</p>
+      <p class="subhead cl-blue" style="margin-bottom: 0px">
+        เราว่าคุณอาจจะยังไม่ค่อยเข้าใจในเรื่องนี้เท่าไหร่
+      </p>
+      <p class="subhead cl-blue">ค่อยๆ ลองใหม่ก็ได้นะ</p>
+      <p
+        class="container cl-navy"
+        style="width: 60%; text-align: left; margin-top: 50px"
+      >
+        ถ้าหากคุณไม่ได้ยอมรับและให้คุณค่าต่อการดูและ และ
+        การทำงานบ้านแบบไม่ได้รับค่าจ้าง หรือ ฝ่ายชายที่ไม่ได้ช่วยเหลือแบ่งเบากัน
+        ในการทำงาน จะมีส่วนทำให้เกิดปัญหาภายในครอบครัวได้ไม่มากก็น้อย
+        เพราะจะสามารถเกิดความกดดัน, ความไม่เข้าใจกัน และ
+        ความเครียดสะสมจากการทำงาน ซึ่งจะนำไปสู่การทะเลาะ และ
+        อาจจะเลิกรากันได้ในที่สุด
+      </p>
+      <a
+        class="btn btn-navy-yellow"
+        id="return_to_quiz"
+        style="margin-top: 70px; margin-bottom: 30px"
+        href="#"
+        role="button"
+        >ลองใหม่</a
+      >
+    </div>
+    <div class="page8 empty container-fluid content bg-pale-pink">
+      <p class="head cl-red" style="margin-bottom: 0px; margin-left: 35%">
+        <span class="tab"></span>เยี่ยมเลย!
+      </p>
+      <p class="subhead cl-blue" style="margin-bottom: 0px; margin-left: 35%">
+        <span class="tab"></span>ยอมรับและให้คุณค่า
+      </p>
+      <p class="subhead cl-blue" style="margin-bottom: 0px; margin-left: 35%">
+        <span class="tab"></span>แก่การทำงานบ้าน
+      </p>
+      <div class="col">
+        <p
+          class="cl-blue"
+          style="margin-top: 2%; margin-right: 50%; margin-left: 15%"
+        >
+          ต้องยอมรับและให้คุณค่าต่อการดูแลและการทำงานบ้านแบบไม่ได้รับค่าจ้าง
+          เพราะไม่ว่าบุคคลใดก็ควรได้รับค่าแรงเมื่อได้ทำงานเพื่อใช้จ่ายส่วนตัว
+          โดยรัฐบาลสามารถช่วยเหลือได้โดยจัดเตรียมบริการสาธารณะ
+          โครงสร้างพื้นฐานและนโยบายการคุ้มครองทางสังคมให้
+          และสนับสนุนความรับผิดชอบร่วมกันภายในครัวเรือนและครอบครัวตามความเหมาะสมของแต่ละประเทศ
+        </p>
+        <p
+          class="cl-blue"
+          style="margin-top: 3%; margin-left: 15%; margin-right: 50%"
+        >
+          รวมถึงการขจัดความคิดที่ว่าด้วยการให้เพศหญิงต้องเป็นคนที่ทำงานบ้านเพียงคนเดียว
+          เปลี่ยนเป็นการแบ่งเบากันภายในครอบครัวแทน
+        </p>
+      </div>
+      <div class="col">
+        <div style="position: absolute; right: 0px; top: 150px" class="img4-1">
+          <img style="width: auto; height: 60vh" src="img/page4/4-1.png" />
+        </div>
+        <div style="position: absolute; right: 0px; top: 150px" class="img4-2">
+          <img style="width: auto; height: 42vh" src="img/page4/4-2.png" />
+        </div>
+      </div>
+    </div>
+    <script>
+      // Timer
+      var counter = 12;
+      function timer() {
+        var bar = $("#pro_bar");
+        var interval = setInterval(function () {
+          $("#pro_bar").css("width", (counter - 1) * 10 + "%");
+          counter--;
+          // Display 'counter' wherever you want to display it.
+          if (counter <= 0) {
+            clearInterval(interval);
+            $("#wrong_ans").slideToggle(500);
+            return;
+          } else {
+            $("#time").text(counter);
+          }
+        }, 1000);
+      }
+      $(".fade01").slideDown(1000);
+
+      // Credit
+      $(".btn-credit").click(function () {
+        $(".credit").slideToggle(500);
+      });
+      $(".credit").click(function () {
+        $(".credit").slideToggle(500);
+      });
+
+      //Start quiz fix later
+      $("#start_quiz").click(function () {
+        $("#start_quiz").fadeOut(500);
+        $(".fade02").slideDown(1000);
+        $(".quiz").delay(2000).slideDown(1000);
+        timer();
+      });
+
+      // Press right answer
+      $("#btn_yes").click(function () {
+        $(".page7").fadeOut(500);
+        $(".page8").delay(500).fadeIn(500);
+        counter = 99999;
+        clearInterval(interval);
+      });
+
+      //Press wrong answer
+      $("#btn_nope").click(function () {
+        $("#wrong_ans").slideToggle(500);
+        clearInterval(interval);
+      });
+
+      //   Return to quiz from wrong answer popup
+      $("#return_to_quiz").click(function () {
+        $("#wrong_ans").slideToggle(500);
+        counter = 10;
+        timer();
+      });
+    </script>
+  </body>
+</html>
