@@ -14,59 +14,101 @@
 }
 
 /* Background Color */
-.bg-pale-pink {background: var(--ci1);}
-.bg-yellow {background: var(--ci2);}
-.bg-pink {background: var(--ci3);}
-.bg-peach {background: var(--ci4);}
-.bg-red {background: var(--ci5);}
-.bg-blue {background: var(--ci6);}
-.bg-navy {background: var(--ci7);}
+.bg-pale-pink {
+  background: var(--ci1);
+}
+.bg-yellow {
+  background: var(--ci2);
+}
+.bg-pink {
+  background: var(--ci3);
+}
+.bg-peach {
+  background: var(--ci4);
+}
+.bg-red {
+  background: var(--ci5);
+}
+.bg-blue {
+  background: var(--ci6);
+}
+.bg-navy {
+  background: var(--ci7);
+}
 
 /* Font Color */
-.cl-pale-pink {color: var(--ci1);}
-.cl-yellow {color: var(--ci2);}
-.cl-pink {color: var(--ci3);}
-.cl-peach {color: var(--ci4);}
-.cl-red {color: var(--ci5);}
-.cl-blue {color: var(--ci6);}
-.cl-navy {color: var(--ci7);}
-
-/* Border Color */
-.bor-pale-pink {border-color: var(--ci1);}
-.bor-yellow {border-color: var(--ci2);}
-.bor-pink {border-color: var(--ci3);}
-.bor-peach {border-color: var(--ci4);}
-.bor-red {border-color: var(--ci5);}
-.bor-blue {border-color: var(--ci6);}
-.bor-navy {border-color: var(--ci7);}
-
-/* Button Color */
-.btn-pink-navy{
-  background:var(--ci3);
+.cl-pale-pink {
+  color: var(--ci1);
+}
+.cl-yellow {
+  color: var(--ci2);
+}
+.cl-pink {
+  color: var(--ci3);
+}
+.cl-peach {
+  color: var(--ci4);
+}
+.cl-red {
+  color: var(--ci5);
+}
+.cl-blue {
+  color: var(--ci6);
+}
+.cl-navy {
   color: var(--ci7);
 }
-.btn-pink-navy:hover{
-  background:var(--ci1);
+
+/* Border Color */
+.bor-pale-pink {
+  border-color: var(--ci1);
+}
+.bor-yellow {
+  border-color: var(--ci2);
+}
+.bor-pink {
+  border-color: var(--ci3);
+}
+.bor-peach {
+  border-color: var(--ci4);
+}
+.bor-red {
+  border-color: var(--ci5);
+}
+.bor-blue {
+  border-color: var(--ci6);
+}
+.bor-navy {
+  border-color: var(--ci7);
+}
+
+/* Button Color */
+.btn-pink-navy {
+  background: var(--ci3);
+  color: var(--ci7);
+}
+.btn-pink-navy:hover {
+  background: var(--ci1);
   color: var(--ci3);
 }
 
-.btn-navy-yellow{
-  background:var(--ci7);
+.btn-navy-yellow {
+  background: var(--ci7);
   color: var(--ci2);
 }
 
-.btn-navy-yellow:hover{
-  background:var(--ci2);
+.btn-navy-yellow:hover {
+  background: var(--ci2);
   color: var(--ci7);
 }
 
-.btn-pink-white{
-  background:var(--ci3);
+.btn-pink-white {
+  background: var(--ci3);
   color: var(--ci1);
 }
 
-.btn-pink-white:hover{
-  background:var(--ci1);
+.btn-pink-white:hover {
+  background: var(--ci1);
   color: var(--ci3);
 }
 
@@ -114,15 +156,16 @@
   position: absolute;
   bottom: 20px;
   right: 50px;
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
+  z-index: 998;
 }
 .btn-credit:hover {
   opacity: 1;
 }
 
-.credit{
+.credit {
   position: absolute;
   bottom: 0;
   background: #fff;
@@ -138,35 +181,100 @@
   font-size: 30px;
 }
 
-#wrong_ans{
+#wrong_ans {
   display: none;
   top: 0;
   position: absolute;
   z-index: 1000;
 }
 
-.empty{
+.empty {
   display: none;
 }
 
-.img4-1{
+.img4-1 {
   animation: move2 1s;
-  animation-delay:1.8s;
-  animation-fill-mode: forwards
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
 }
 
-.img4-2{
+.img4-2 {
   animation: move3 1s;
   animation-delay: 1s;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 
 @keyframes move2 {
-  from {top: 150px;}
-  to {top: -375px;}
+  from {
+    top: 150px;
+  }
+  to {
+    top: -375px;
+  }
 }
 
 @keyframes move3 {
-  from {top: 150px;}
-  to {top: -475px;}
+  from {
+    top: 150px;
+  }
+  to {
+    top: -475px;
+  }
+}
+
+.img2-6 {
+  animation: move6 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.img2-5 {
+  animation: move6 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.img2-4 {
+  animation: move6 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.img2-2 {
+  animation: move2 0.7s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.img2-3 {
+  animation: move3 0.7s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move6 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: -20px;
+  }
+}
+
+@keyframes move2 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 380px;
+  }
+}
+
+@keyframes move3 {
+  from {
+    top: -400px;
+  }
+  to {
+    top: 330px;
+  }
 }
