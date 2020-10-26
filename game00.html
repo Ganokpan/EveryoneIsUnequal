@@ -94,7 +94,7 @@
         class="container cl-navy"
         style="width: 60%; text-align: left; margin-top: 50px"
       >
-        ถ้าหากคุณไม่ได้ยอมรับและให้คุณค่าต่อการดูและ และ
+        ถ้าหากคุณไม่ได้ยอมรับและให้คุณค่าต่อการดูแล และ
         การทำงานบ้านแบบไม่ได้รับค่าจ้าง หรือ ฝ่ายชายที่ไม่ได้ช่วยเหลือแบ่งเบากัน
         ในการทำงาน จะมีส่วนทำให้เกิดปัญหาภายในครอบครัวได้ไม่มากก็น้อย
         เพราะจะสามารถเกิดความกดดัน, ความไม่เข้าใจกัน และ
@@ -187,7 +187,7 @@
       // Press right answer
       $("#btn_yes").click(function () {
         $(".page7").fadeOut(500);
-        $(".page8").delay(500).fadeIn(500);
+        $(".page8").delay(100).fadeIn(500);
         counter = 99999;
         clearInterval(interval);
       });
@@ -195,6 +195,7 @@
       //Press wrong answer
       $("#btn_nope").click(function () {
         $("#wrong_ans").slideToggle(500);
+        counter = 99999;
         clearInterval(interval);
       });
 
