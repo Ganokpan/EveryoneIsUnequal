@@ -133,6 +133,7 @@
 .header {
   margin: 30px;
   position: fixed;
+  z-index: 999;
 }
 
 .tab {
@@ -192,34 +193,26 @@
   display: none;
 }
 
-.img4-1 {
+.img4-1{
   animation: move2 1s;
-  animation-delay: 1.8s;
-  animation-fill-mode: forwards;
+  animation-delay:1.8s;
+  animation-fill-mode: forwards
 }
 
-.img4-2 {
+.img4-2{
   animation: move3 1s;
   animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards
 }
 
 @keyframes move2 {
-  from {
-    top: 150px;
-  }
-  to {
-    top: -375px;
-  }
+  from {top: 150px;}
+  to {top: -375px;}
 }
 
 @keyframes move3 {
-  from {
-    top: 150px;
-  }
-  to {
-    top: -475px;
-  }
+  from {top: 150px;}
+  to {top: -475px;}
 }
 
 .img2-6 {
