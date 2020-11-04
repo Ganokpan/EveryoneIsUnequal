@@ -1,7 +1,25 @@
+/* Font Size */
 * {
   font-family: "K2D", sans-serif;
   font-size: 20px;
 }
+
+.head {
+  font-family: "Chonburi", cursive;
+  font-size: 50px;
+}
+
+.subhead {
+  font-family: "Chonburi", cursive;
+  font-size: 30px;
+}
+
+/* wrapper always at lowest layer */
+.wrapper {
+  z-index: -1;
+}
+
+/* Color */
 
 :root {
   --ci1: #fdecf2;
@@ -87,187 +105,88 @@
   background: var(--ci3);
   color: var(--ci7);
 }
-.btn-pink-navy:hover {
-  background: var(--ci1);
-  color: var(--ci3);
-}
+/* .btn-pink-navy:hover {
+    background: var(--ci1);
+    color: var(--ci3);
+  } */
 
 .btn-navy-yellow {
   background: var(--ci7);
   color: var(--ci2);
 }
 
-.btn-navy-yellow:hover {
-  background: var(--ci2);
-  color: var(--ci7);
-}
+/* .btn-navy-yellow:hover {
+    background: var(--ci2);
+    color: var(--ci7);
+  } */
 
 .btn-pink-white {
   background: var(--ci3);
   color: var(--ci1);
 }
 
-.btn-pink-white:hover {
-  background: var(--ci1);
-  color: var(--ci3);
+/* .btn-pink-white:hover {
+    background: var(--ci1);
+    color: var(--ci3);
+  } */
+
+.container-fluid {
+  padding: 0;
 }
 
-.head {
-  font-family: "Chonburi", cursive;
-  font-size: 50px;
-}
-
-.subhead {
-  font-family: "Chonburi", cursive;
-  font-size: 30px;
-}
-
-.content {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 80px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.header {
-  margin: 30px;
-  position: fixed;
+/* logo */
+.logo {
   z-index: 999;
+  position: fixed;
+  top: 38px;
+  left: 50px;
 }
 
-.tab {
-  padding-left: 80px;
-}
-
-.btn {
-  border-radius: 20px;
-  font-family: "Chonburi", cursive;
-  font-size: 30px;
-  width: 200px;
-  padding: 5px;
-}
+/* credit */
 
 .btn-credit {
-  width: 40px;
-  height: 40px;
-  border-style: solid;
-  border-width: 10px;
-  border-radius: 50%;
+  z-index: 999;
   position: fixed;
-  bottom: 20px;
-  right: 50px;
-  opacity: 0.5;
+  bottom: 35.4px;
+  right: 75.5px;
   cursor: pointer;
-  transition: 0.3s;
-  z-index: 998;
+  color: #000;
+  font-size: 2.15em;
+  opacity: 0.5;
+  transition: 1s;
 }
-.btn-credit:hover {
+
+.btn-credit:hover{
   opacity: 1;
 }
 
-.credit {
-  position: fixed;
-  bottom: 0;
-  background: #fff;
-  text-align: center;
-  padding-top: 25px;
-  z-index: 999;
-  display: none;
-  cursor: pointer;
-}
-
-.time {
-  font-family: "Chonburi", cursive;
-  font-size: 30px;
-}
-
-#wrong_ans {
-  display: none;
-  top: 0;
-  position: absolute;
+.credit{
   z-index: 1000;
-}
-
-.empty {
+  width: 100vw;
+  font-size: 16px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  margin: 0;
+  padding: 29px 0 29px 0;
+  bottom: 0;
+  cursor: pointer;
   display: none;
 }
 
-.img4-1{
-  animation: move2 1s;
-  animation-delay:1.8s;
-  animation-fill-mode: forwards
+/* fixed container */
+.fixed {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  /* background: gray; */
 }
 
-.img4-2{
-  animation: move3 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards
-}
-
-@keyframes move2 {
-  from {top: 150px;}
-  to {top: -375px;}
-}
-
-@keyframes move3 {
-  from {top: 150px;}
-  to {top: -475px;}
-}
-
-.img2-6 {
-  animation: move6 1s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-}
-
-.img2-5 {
-  animation: move6 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-.img2-4 {
-  animation: move6 1s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-
-.img2-2 {
-  animation: move2 0.7s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-.img2-3 {
-  animation: move3 0.7s;
-  animation-delay: 3.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes move6 {
-  from {
-    top: -400px;
-  }
-  to {
-    top: -20px;
-  }
-}
-
-@keyframes move2 {
-  from {
-    top: -400px;
-  }
-  to {
-    top: 380px;
-  }
-}
-
-@keyframes move3 {
-  from {
-    top: -400px;
-  }
-  to {
-    top: 330px;
-  }
+/* animation */
+.animation {
+  z-index: 0;
+  position: absolute;
 }
