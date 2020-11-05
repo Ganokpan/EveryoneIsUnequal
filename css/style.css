@@ -145,7 +145,7 @@
 /* credit */
 
 .btn-credit {
-  z-index: 999;
+  z-index: 1000;
   position: fixed;
   bottom: 35.4px;
   right: 75.5px;
@@ -161,7 +161,7 @@
 }
 
 .credit{
-  z-index: 1000;
+  z-index: 999;
   width: 100vw;
   font-size: 16px;
   text-align: center;
