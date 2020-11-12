@@ -191,3 +191,28 @@
   z-index: 0;
   position: absolute;
 }
+
+@keyframes main3down1{
+  from {top: -125px;}
+  to {top: 88px;}
+}
+
+@keyframes main3down2{
+  from {top: -175px;}
+  to {top: 148px;}
+}
+
+@keyframes main3down3{
+  from {width: 437px; height: 314px;}
+  to {width: 450px; height: 330px;}
+}
+
+@keyframes main3down4{
+  from {width: 202px; height: 190px;}
+  to {width: 195px; height: 180px;}
+}
+
+@keyframes main3down5{
+  from {width: 202px;height: 285px;}
+  to {width: 195px;height: 270px;}
+}
