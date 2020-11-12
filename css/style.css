@@ -216,3 +216,15 @@
   from {width: 202px;height: 285px;}
   to {width: 195px;height: 270px;}
 }
+
+@keyframes main5_1{
+  0% {transform: scale(0,0);}
+  50% {transform: scale(1.5,1.5);}
+  100% {transform: scale(1,1);}
+  
+}
+
+@keyframes main5_2{
+  from {top: -1000px;}
+  to {top: 72px;}
+}
