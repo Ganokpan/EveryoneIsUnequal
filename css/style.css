@@ -1,7 +1,7 @@
 /* Font Size */
 * {
   font-family: "K2D", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .head {
@@ -174,6 +174,7 @@
   display: none;
 }
 
+<<<<<<< Updated upstream
 
 /* fixed container */
 .fixed {
@@ -227,4 +228,8 @@
 @keyframes main5_2{
   from {top: -1000px;}
   to {top: 72px;}
+=======
+.fullscreen-block{
+  background-color: #f15942;
+>>>>>>> Stashed changes
 }
