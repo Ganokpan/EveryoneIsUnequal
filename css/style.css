@@ -169,6 +169,11 @@
   z-index: 0;
   position: absolute;
 }
+/* size button */
+.btn-size {
+  border-radius: 8px;
+}
+
 @keyframes main3down1{
   from {top: -125px;}
   to {top: 88px;}
