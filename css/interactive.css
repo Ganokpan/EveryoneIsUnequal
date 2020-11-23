@@ -17,10 +17,12 @@
     backface-visibility: hidden;
 }
 
-#3-4{
-    display: none;
-}
-
-#3-5{
-    display: none;
-}
+/* Cloth */
+.draggable {
+    transition: transform 0.5s;
+    cursor: grab;
+  }
+  .draggable:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }

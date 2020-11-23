@@ -38,7 +38,7 @@
       .mButton {
         display: inline;
         padding: 7.5px;
-        opacity: .2;
+        opacity: 0.2;
         transition: 1s;
       }
 
@@ -47,7 +47,7 @@
         transition: 1s;
       }
 
-      .activeButt{
+      .activeButt {
         opacity: 1;
       }
     </style>
@@ -240,260 +240,274 @@
           </div>
         </div> -->
         <div class="slide" id="1-4">
-          <div class="fixed">
-            <p
-              class="subhead cl-navy"
-              style="
-                position: absolute;
-                top: 70px;
-                margin-left: 270px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              ไหนมาลองทำความเข้าใจกันหน่อย
-            </p>
-            <p
-              class="subhead cl-peach"
-              style="
-                position: absolute;
-                top: 140px;
-                margin-left: 330px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              คุณคิดว่าผู้หญิงควรได้รับ
-            </p>
-            <p
-              class="subhead cl-peach"
-              style="
-                position: absolute;
-                top: 178px;
-                margin-left: 190px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              การให้คุณค่าเนื่องจากการทำงานบ้านหรือไม่?
-            </p>
-            <div
-              id="square"
-              style="
-                position: relative;
-                width: 400px;
-                height: 240px;
-                top: 290px;
-                margin-left: 320px;
-                background: var(--ci7);
-                border-radius: 20px;
-              "
-            >
-              <div
-                class="bg-yellow"
+          <div id="timedQuiz">
+            <div class="fixed">
+              <p
+                class="subhead cl-navy"
                 style="
                   position: absolute;
-                  width: 373.17px;
-                  height: 34.58px;
-                  left: 27.2px;
-                  top: 57.4px;
+                  top: 70px;
+                  margin-left: 270px;
+                  margin-top: 8.5px;
+                  text-align: center;
                 "
-                id="timebar"
-              ></div>
-              <div class="subhead cl-peach" id="countdown">00 : 10</div>
-            </div>
-            <button
-              class="subhead cl-navy"
-              type="button"
-              style="
-                position: relative;
-                top: 200px;
-                margin-right: 40px;
-                margin-top: 8.5px;
-                background: var(--ci3);
-                color: var(--ci7);
-                border-radius: 15px;
-                font-size: 20px;
-                padding: 4px 60px;
-              "
-            >
-              ใช่
-            </button>
+              >
+                ไหนมาลองทำความเข้าใจกันหน่อย
+              </p>
+              <p
+                class="subhead cl-peach"
+                style="
+                  position: absolute;
+                  top: 140px;
+                  margin-left: 330px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                คุณคิดว่าผู้หญิงควรได้รับ
+              </p>
+              <p
+                class="subhead cl-peach"
+                style="
+                  position: absolute;
+                  top: 178px;
+                  margin-left: 190px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                การให้คุณค่าเนื่องจากการทำงานบ้านหรือไม่?
+              </p>
+              <div
+                id="square"
+                style="
+                  position: relative;
+                  width: 400px;
+                  height: 240px;
+                  top: 290px;
+                  margin-left: 320px;
+                  background: var(--ci7);
+                  border-radius: 20px;
+                "
+              >
+                <div
+                  class="bg-yellow"
+                  style="
+                    position: absolute;
+                    width: 350px;
+                    height: 35px;
+                    left: 50%;
+                    margin-left: -175px;
+                    top: 15%;
+                  "
+                  id="timebar"
+                ></div>
+                <div
+                  class="subhead cl-peach"
+                  id="countdown"
+                  style="
+                    position: absolute;
+                    left: 50%;
+                    top: 35%;
+                    transform: translateX(-50%);
+                  "
+                >
+                  00 : 10
+                </div>
+              </div>
+              <button
+                class="subhead cl-navy q1-yes"
+                type="button"
+                style="
+                  position: relative;
+                  top: 200px;
+                  margin-right: 40px;
+                  margin-top: 8.5px;
+                  background: var(--ci3);
+                  color: var(--ci7);
+                  border-radius: 15px;
+                  font-size: 20px;
+                  padding: 4px 60px;
+                "
+              >
+                ใช่
+              </button>
 
-            <button
-              class="subhead cl-navy"
-              type="button"
-              style="
-                position: relative;
-                top: 200px;
-                margin-right: -20px;
-                margin-top: 8.5px;
-                background: var(--ci3);
-                color: var(--ci7);
-                border-radius: 15px;
-                font-size: 20px;
-                padding: 4px 60px;
-              "
-            >
-              ไม่
-            </button>
+              <button
+                class="subhead cl-navy q1-no"
+                type="button"
+                style="
+                  position: relative;
+                  top: 200px;
+                  margin-right: -20px;
+                  margin-top: 8.5px;
+                  background: var(--ci3);
+                  color: var(--ci7);
+                  border-radius: 15px;
+                  font-size: 20px;
+                  padding: 4px 60px;
+                "
+              >
+                ไม่
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="slide" id="1-5">
-          <div class="fixed">
-            <p
-              class="fade1 subhead cl-peach"
-              style="
-                font-size: 50px;
-                position: absolute;
-                top: 90px;
-                margin-left: 350px;
-                margin-top: 8.5px;
-                text-align: right;
-              "
-            >
-              เยี่ยมเลย!
-            </p>
-            <p
-              class="fade2 subhead cl-blue"
-              style="
-                position: absolute;
-                top: 155px;
-                margin-left: 350px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              ยอมรับและให้คุณค่า
-            </p>
-            <p
-              class="fade2 subhead cl-blue"
-              style="
-                position: absolute;
-                top: 190px;
-                margin-left: 350px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              แก่การทำงานบ้าน
-            </p>
-            <p
-              class="fade3 cl-blue"
-              style="
-                text-align: left;
-                position: absolute;
-                top: 265px;
-                margin-left: 154px;
-                margin-top: 8.5px;
-              "
-            >
-              ต้องยอมรับและให้คุณค่าต่อการดูแลและการทํางานบ้านแบบไม่ได้<br />รับค่าจ้าง
-              เพราะไม่ว่าบุคคลใดก็ควรได้รับค่าแรงเมื่อได้ทํางานเพื่อ<br />ใช้จ่ายส่วนตัว
-              โดยรัฐบาลสามารถช่วยเหลือได้โดยจัดเตรียม<br />บริการสาธารณะ
-              โครงสร้างพื้นฐานและนโยบายการคุ้มครองทาง<br />สังคมให้
-              และสนับสนุนความรับผิดชอบร่วมกันภายในครัวเรือน<br />และครอบครัวตามความเหมาะสมของแต่ล่ะประเทศ
-            </p>
-            <p
-              class="fade4 cl-blue"
-              style="
-                text-align: left;
-                position: absolute;
-                top: 480px;
-                margin-left: 154px;
-                margin-top: 8.5px;
-              "
-            >
-              รวมถึงการขจัดความคิดที่ว่าด้วยการให้เพศหญิงต้องเป็น<br />คนที่ทํางานบ้านเพียงคนเดียว
-              เปลี่ยนเป็นการแบ่งเบากัน<br />ภายในครอบครัวแทน
-            </p>
-            <img
-              src="img/main1/1-5 page/gif/1_5.gif"
-              style="
-                width: 700px;
-                height: 580px;
-                position: relative;
-                top: 50px;
-                margin-left: 140px;
-                margin-top: 8.5px;
-              "
-            />
+          <div id="timedYes" style="display: none">
+            <div class="fixed">
+              <p
+                class="fade1 subhead cl-peach"
+                style="
+                  font-size: 50px;
+                  position: absolute;
+                  top: 90px;
+                  margin-left: 350px;
+                  margin-top: 8.5px;
+                  text-align: right;
+                "
+              >
+                เยี่ยมเลย!
+              </p>
+              <p
+                class="fade2 subhead cl-blue"
+                style="
+                  position: absolute;
+                  top: 155px;
+                  margin-left: 350px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                ยอมรับและให้คุณค่า
+              </p>
+              <p
+                class="fade2 subhead cl-blue"
+                style="
+                  position: absolute;
+                  top: 190px;
+                  margin-left: 350px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                แก่การทำงานบ้าน
+              </p>
+              <p
+                class="fade3 cl-blue"
+                style="
+                  text-align: left;
+                  position: absolute;
+                  top: 265px;
+                  margin-left: 154px;
+                  margin-top: 8.5px;
+                "
+              >
+                ต้องยอมรับและให้คุณค่าต่อการดูแลและการทํางานบ้านแบบไม่ได้<br />รับค่าจ้าง
+                เพราะไม่ว่าบุคคลใดก็ควรได้รับค่าแรงเมื่อได้ทํางานเพื่อ<br />ใช้จ่ายส่วนตัว
+                โดยรัฐบาลสามารถช่วยเหลือได้โดยจัดเตรียม<br />บริการสาธารณะ
+                โครงสร้างพื้นฐานและนโยบายการคุ้มครองทาง<br />สังคมให้
+                และสนับสนุนความรับผิดชอบร่วมกันภายในครัวเรือน<br />และครอบครัวตามความเหมาะสมของแต่ล่ะประเทศ
+              </p>
+              <p
+                class="fade4 cl-blue"
+                style="
+                  text-align: left;
+                  position: absolute;
+                  top: 480px;
+                  margin-left: 154px;
+                  margin-top: 8.5px;
+                "
+              >
+                รวมถึงการขจัดความคิดที่ว่าด้วยการให้เพศหญิงต้องเป็น<br />คนที่ทํางานบ้านเพียงคนเดียว
+                เปลี่ยนเป็นการแบ่งเบากัน<br />ภายในครอบครัวแทน
+              </p>
+              <img
+                src="img/main1/1-5 page/gif/1_5.gif"
+                style="
+                  width: 700px;
+                  height: 580px;
+                  position: relative;
+                  top: 50px;
+                  margin-left: 140px;
+                  margin-top: 8.5px;
+                "
+              />
+            </div>
           </div>
-        </div>
-        <div class="slide" id="1-6">
-          <div class="fixed">
-            <p
-              class="fade1 subhead cl-navy"
-              style="
-                font-size: 50px;
-                position: absolute;
-                top: 90px;
-                margin-left: 400px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              ว๊า! แย่จัง
-            </p>
-            <p
-              class="fade2 subhead cl-blue"
-              style="
-                position: absolute;
-                top: 170px;
-                margin-left: 180px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              เราว่าคุณอาจจะยังไม่ค่อยเข้าใจในเรื่องนี้เท่าไร
-            </p>
-            <p
-              class="fade2 subhead cl-blue"
-              style="
-                position: absolute;
-                top: 205px;
-                margin-left: 360px;
-                margin-top: 8.5px;
-                text-align: center;
-              "
-            >
-              ค่อยๆ ลองใหม่ก็ได้นะ
-            </p>
-            <p
-              class="fade3 cl-blue"
-              style="
-                text-align: left;
-                position: absolute;
-                top: 290px;
-                margin-left: 180px;
-                margin-top: 8.5px;
-              "
-            >
-              ถ้าหากคุณไม่ได้ยอมรับและให้คุณค่าต่อการดูแล
-              และการทำงานบ้านแบบไม่ได้<br />รับค่าจ้าง
-              หรือฝ่ายชายที่ไม่ได้ช่วยเหลือแบ่งเบากัน ในการทำงาน
-              จะมีส่วนทำให้<br />เกิดปัญหาภายในครอบครัวได้ไม่มากก็น้อย
-              เพราะจะสามารถเกิดความกดดัน<br />ความไม่เข้าใจกัน
-              และความเครียดสะสมจากการทำงาน ซึ่งจะนำไปสู่การทะเลาะ<br />และ
-              อาจจะเลิกลากันได้ในที่สุด
-            </p>
-            <button
-              class="subhead cl-yellow"
-              type="button"
-              style="
-                position: relative;
-                top: 500px;
-                margin-left: -30px;
-                margin-top: 8.5px;
-                background: var(--ci7);
-                color: var(--ci2);
-                border-radius: 10px;
-                font-size: 18px;
-                padding: 4px 40px;
-              "
-            >
-              ลองใหม่
-            </button>
+          <div id="timedNo" style="display: none">
+            <div class="fixed">
+              <p
+                class="fade1 subhead cl-navy"
+                style="
+                  font-size: 50px;
+                  position: absolute;
+                  top: 90px;
+                  margin-left: 400px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                ว๊า! แย่จัง
+              </p>
+              <p
+                class="fade2 subhead cl-blue"
+                style="
+                  position: absolute;
+                  top: 170px;
+                  margin-left: 180px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                เราว่าคุณอาจจะยังไม่ค่อยเข้าใจในเรื่องนี้เท่าไร
+              </p>
+              <p
+                class="fade2 subhead cl-blue"
+                style="
+                  position: absolute;
+                  top: 205px;
+                  margin-left: 360px;
+                  margin-top: 8.5px;
+                  text-align: center;
+                "
+              >
+                ค่อยๆ ลองใหม่ก็ได้นะ
+              </p>
+              <p
+                class="fade3 cl-blue"
+                style="
+                  text-align: left;
+                  position: absolute;
+                  top: 290px;
+                  margin-left: 180px;
+                  margin-top: 8.5px;
+                "
+              >
+                ถ้าหากคุณไม่ได้ยอมรับและให้คุณค่าต่อการดูแล
+                และการทำงานบ้านแบบไม่ได้<br />รับค่าจ้าง
+                หรือฝ่ายชายที่ไม่ได้ช่วยเหลือแบ่งเบากัน ในการทำงาน
+                จะมีส่วนทำให้<br />เกิดปัญหาภายในครอบครัวได้ไม่มากก็น้อย
+                เพราะจะสามารถเกิดความกดดัน<br />ความไม่เข้าใจกัน
+                และความเครียดสะสมจากการทำงาน ซึ่งจะนำไปสู่การทะเลาะ<br />และ
+                อาจจะเลิกลากันได้ในที่สุด
+              </p>
+              <button
+                class="subhead cl-yellow q1-retry"
+                type="button"
+                style="
+                  position: relative;
+                  top: 500px;
+                  margin-left: -30px;
+                  margin-top: 8.5px;
+                  background: var(--ci7);
+                  color: var(--ci2);
+                  border-radius: 10px;
+                  font-size: 18px;
+                  padding: 4px 40px;
+                "
+              >
+                ลองใหม่
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -540,6 +554,20 @@
       $(".fade4").delay(1500).slideDown(3000);
 
       //   timer
+
+      // Button press
+      $(".q1-yes").click(function () {
+        $("#timedQuiz").fadeOut();
+        $("#timedYes").fadeIn(1000);
+      });
+      $(".q1-no").click(function () {
+        $("#timedQuiz").fadeOut();
+        $("#timedNo").fadeIn(1000);
+      });
+      $(".q1-retry").click(function () {
+        $("#timedNo").fadeOut();
+        $("#timedQuiz").fadeIn(1000);
+      });
     </script>
   </body>
 </html>

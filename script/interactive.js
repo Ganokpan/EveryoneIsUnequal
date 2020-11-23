@@ -2,8 +2,10 @@
 $(".draggable").draggable();
       $(".droppable").droppable({
         drop: function () {
-          $("#3-3").fadeOut(1000);
-          $("#3-4, #3-5").fadeIn(1000);
+          $("#3-2").removeClass("slideBeforeLock");
+          $("#clothQuiz").fadeOut(1000);
+          $("#clothAns").delay(1000).fadeIn(1000);
+          $(".fp-controlArrow").css({"border-style": "solid"});
         },
       });
 
@@ -42,7 +44,8 @@ function disableCard(){
   secondCard.removeEventListener("click", flipCard);
   matchedCard++;
   if (matchedCard == 2) {
-      $("#2-3").fadeOut(2000);
+    $("#cardQuiz").fadeOut(2000);
+    $("#cardAns").delay(2000).fadeIn(2000);
   }
 
 }
