@@ -134,13 +134,13 @@ body{
 .btn-credit {
   z-index: 1000;
   position: fixed;
-  bottom: 35.4px;
-  right: 75.5px;
+  bottom: 35px;
+  right: 75px;
   cursor: pointer;
-  color: #000;
-  font-size: 2.15em;
+  width: 43px;
+  height: 43px;
   opacity: 0.5;
-  transition: 1s;
+  transition: .5s;
 }
 .btn-credit:hover{
   opacity: 1;
@@ -191,12 +191,11 @@ body{
   display: inline;
   padding: 7.5px;
   opacity: .2;
-  transition: 1s;
+  transition: .5s;
 }
 
 .mButton:hover {
   opacity: 1;
-  transition: 1s;
 }
 
 .activeButt{
