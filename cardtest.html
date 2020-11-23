@@ -1,0 +1,350 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everyeon is (UN) equal</title>
+    <link rel="icon" href="img/logo/logo_peach.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap"
+      rel="stylesheet"
+    />
+    <!-- offline bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    />
+    <!-- offline fullpage.js -->
+    <link rel="stylesheet" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <style>
+        .matching {
+            perspective: 1000px;
+        }
+        .gamecard{
+            cursor: pointer;
+            perspective: 1000px;
+            transform: scale(1);
+            transform-style: preserve-3d;
+            transition: transform .5s;
+        }
+        .gamecard:active{
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+        .flip{
+            transform: rotateY(180deg);
+        }
+        .front{
+            backface-visibility: hidden;
+        }
+/* 
+        .back{
+            transform: rotateY(180deg);
+        } */
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+      ||| fixed elements |||
+     -->
+    <button class="check" style="position: absolute; z-index: 100000">a</button>
+    <!-- logo -->
+    <img src="img/logo/logo_yellow.svg" class="logo" />
+
+    <!-- credit -->
+    <i class="fas fa-info-circle btn-credit"></i>
+    <p class="credit">
+      เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
+      คณะสถาปัตยกรรมศาสตร์ และ คณะการโปรแกรมและสื่อประสม
+      แขนงวิชาการพัฒนาสื่อประสม<br />และเกม
+      คณะเทคโนโลยีสารสนเทศสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020
+    </p>
+    <!-- 
+        |||   pages   |||
+    -->
+    <div class="container-fluid" id="wrapper">
+      <!-- maincontent 2 -->
+      <div class="section bg-yellow">
+        <div class="slide" id="2-3">
+          <div class="fixed">
+            <p
+              class="head cl-navy"
+              style="
+                position: absolute;
+                top: 100.98px;
+                margin-left: 186px;
+                text-align: center;
+              "
+            >
+              จงจับคู่กับอาชีพที่เหมาะสม
+            </p>
+            <p
+              class="subhead cl-navy"
+              style="
+                position: absolute;
+                top: 165.5px;
+                margin-left: 163px;
+                text-align: center;
+              "
+            >
+              จงเลือกจับคู่ไพ่ระหว่างเพศ กับ อาชีพที่เหมาะสม
+            </p>
+            <div class="matching">
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 273px;
+                    margin-left: 207px;
+                "
+                >
+                <img
+                    src="img/main2/2-3-4 page/png element/2-3-2.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 464px;
+                    margin-left: 207px;
+                "
+                >
+                <img
+                    src="img/main2/2-3-4 page/png element/2-3-3.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 367px;
+                    margin-left: 371px;
+                "
+                >
+                <img
+                    src="img/main2/2-3-4 page/png element/2-3.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 273px;
+                    margin-left: 688px;
+                "
+                >
+                <img
+                    src="img/main2/2-3-4 page/png element/2-3-4.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 464px;
+                    margin-left: 688px;
+                "
+                >
+                <img
+                    src="img/main2/2-3-4 page/png element/2-3-5.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 273px;
+                    margin-left: 207px;
+                "
+                >
+                <img class="gamecard front" data-framework="man"
+                    src="img/main2/2-3-4 page/png element/2-4.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 464px;
+                    margin-left: 207px;
+                "
+                >
+                <img class="gamecard front" data-framework="woman"
+                    src="img/main2/2-3-4 page/png element/2-4.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 367px;
+                    margin-left: 371px;
+                "
+                >
+                <img class="gamecard front" data-framework="man"
+                    src="img/main2/2-3-4 page/png element/2-4.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 273px;
+                    margin-left: 688px;
+                "
+                >
+                <img class="gamecard front" data-framework="job"
+                    src="img/main2/2-3-4 page/png element/2-4.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+                <div
+                style="
+                    width: 130px;
+                    height: 170px;
+                    position: absolute;
+                    top: 464px;
+                    margin-left: 688px;
+                "
+                >
+                <img class="gamecard front" data-framework="job"
+                    src="img/main2/2-3-4 page/png element/2-4.png"
+                    style="width: 130px; height: 170px"
+                />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        |||   scripts   ||| 
+    -->
+    <!-- jquery -->
+    <script src="script/jquery-3.5.1.min.js"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/3437ca9b77.js"></script>
+
+    <!-- bootstrap -->
+    <script src="script/bootstrap.min.js"></script>
+
+    <!-- fullpage.js -->
+    <script src="script/fullpage.js"></script>
+
+    <!-- isOnScreen -->
+    <script src="script/jquery.isonscreen.js"></script>
+
+    <!-- universal script -->
+    <script>
+      // enable fullpage.js
+      new fullpage("#wrapper", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+      });
+
+      $(document).ready(function () {
+        // $(window).scroll(function () {
+        //   if ($("#2-1").isOnScreen()) {
+        //     $(".fp-controlArrow").css({ display: "none" });
+        //   }
+        // });
+      });
+
+      $(".check").click(function () {
+        if ($("#2-1").isOnScreen()) {
+          alert("yes");
+        } else alert("no");
+      });
+
+      //   $(".fp-controlArrow").click(function () {
+      //     if ($(".pop").isOnScreen()) {
+      //       alert("yes");
+      //     } else alert("no");
+      //   });
+
+      // Credit
+      $(".btn-credit").click(function () {
+        $(".credit").slideToggle(500);
+      });
+      $(".credit").click(function () {
+        $(".credit").slideToggle(500);
+      });
+
+      // Card game
+      const cards = document.querySelectorAll(".gamecard");
+
+      let matchedCard = 0;
+      let hasFlippedCard = false;
+      let lockBoard = false;
+      let firstCard, secondCard;
+
+      function flipCard(){
+          if (lockBoard) return;
+          if (this === firstCard) return;
+          this.classList.toggle("flip");
+          if (!hasFlippedCard) {
+            hasFlippedCard = true;
+            firstCard = this;
+          } else {
+            hasFlippedCard = false;
+            secondCard = this;
+
+            checkForMatch();
+          }
+      }
+      function checkForMatch(){
+        if ((firstCard.dataset.framework == "man" && secondCard.dataset.framework == "job") ||
+            (firstCard.dataset.framework == "job" && secondCard.dataset.framework == "man")){
+                disableCard()
+            } else {
+                unflipCard()
+            }
+      }
+      function disableCard(){
+        firstCard.removeEventListener("click", flipCard);
+        secondCard.removeEventListener("click", flipCard);
+        matchedCard++;
+        if (matchedCard == 2) {
+            $("#2-3").fadeOut(2000);
+        }
+
+      }
+
+      function unflipCard(){
+        lockBoard = true;
+        setTimeout(() => {
+                    firstCard.classList.remove("flip");
+                    secondCard.classList.remove("flip");
+                    lockBoard = false;
+                }, 500);
+      }
+
+      cards.forEach(card => card.addEventListener("click", flipCard));
+    </script>
+  </body>
+</html>

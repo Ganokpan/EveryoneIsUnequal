@@ -1,0 +1,26 @@
+/* Cards */
+.gamecard{
+    cursor: pointer;
+    perspective: 1000px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+.gamecard:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+.flip{
+    transform: rotateY(180deg);
+}
+.front{
+    backface-visibility: hidden;
+}
+
+#3-4{
+    display: none;
+}
+
+#3-5{
+    display: none;
+}

@@ -3,6 +3,8 @@
   font-family: "K2D", sans-serif;
   font-size: 20px;
 }
+
+
 .head {
   font-family: "Chonburi", cursive;
   font-size: 50px;
@@ -205,7 +207,4 @@
 @keyframes main5_2{
   from {top: -1000px;}
   to {top: 72px;}
-}
-.fade1, .fade2, .fade3, .fade4{
-  display: none;
 }
