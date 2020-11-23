@@ -234,3 +234,6 @@ body{
   from {top: -1000px;}
   to {top: 72px;}
 }
+.fade1, .fade2, .fade3, .fade4{
+  display: none;
+}
