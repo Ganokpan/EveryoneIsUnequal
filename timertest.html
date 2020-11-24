@@ -96,7 +96,7 @@
     <div class="container-fluid" id="wrapper">
       <!-- maincontent 1 -->
       <div class="section bg-pale-pink">
-        <!-- <div class="slide" id="1-3">
+        <div class="slide slideBeforeTimer" id="1-3">
           <div class="fixed">
             <p
               class="fade1 subhead cl-navy"
@@ -238,7 +238,7 @@
               สะท้อนให้เห็นว่าค่านิยมของสังคม<br />ไทยยังคงส่งผลต่อเนื่องมาถึงคนในยุคปัจจุบัน<br />
             </p>
           </div>
-        </div> -->
+        </div>
         <div class="slide" id="1-4">
           <div id="timedQuiz">
             <div class="fixed">
@@ -282,74 +282,75 @@
                 id="square"
                 style="
                   position: relative;
-                  width: 400px;
+                  width: 430px;
                   height: 240px;
                   top: 290px;
-                  margin-left: 320px;
+                  margin-left: 310px;
                   background: var(--ci7);
                   border-radius: 20px;
                 "
-              >
-                <div
-                  class="bg-yellow"
-                  style="
-                    position: absolute;
-                    width: 350px;
-                    height: 35px;
-                    left: 50%;
-                    margin-left: -175px;
-                    top: 15%;
-                  "
-                  id="timebar"
-                ></div>
-                <div
-                  class="subhead cl-peach"
-                  id="countdown"
-                  style="
-                    position: absolute;
-                    left: 50%;
-                    top: 35%;
-                    transform: translateX(-50%);
-                  "
-                >
-                  00 : 10
-                </div>
-              </div>
-              <button
-                class="subhead cl-navy q1-yes"
-                type="button"
+              ></div>
+              <progress
+                value="10"
+                max="10"
+                id="pog"
                 style="
-                  position: relative;
-                  top: 200px;
-                  margin-right: 40px;
+                  position: absolute;
+                  width: 370px;
+                  height: 35px;
+                  left: 51.25%;
+                  transform: translateX(-50%);
+                  top: 44%;
+                  background: var(--ci5);
+                "
+              ></progress>
+              <p
+                id="timer"
+                class="subhead cl-peach"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              >
+                00 : 10
+              </p>
+              <p
+                class="q1-yes subhead cl-navy"
+                style="
+                  position: absolute;
+                  top: 460px;
+                  margin-left: 350px;
                   margin-top: 8.5px;
                   background: var(--ci3);
                   color: var(--ci7);
                   border-radius: 15px;
                   font-size: 20px;
                   padding: 4px 60px;
+                  cursor: pointer;
                 "
               >
                 ใช่
-              </button>
+              </p>
 
-              <button
-                class="subhead cl-navy q1-no"
-                type="button"
+              <p
+                class="q1-no subhead cl-navy"
                 style="
-                  position: relative;
-                  top: 200px;
-                  margin-right: -20px;
+                  position: absolute;
+                  top: 460px;
+                  margin-left: 550px;
                   margin-top: 8.5px;
                   background: var(--ci3);
                   color: var(--ci7);
                   border-radius: 15px;
                   font-size: 20px;
                   padding: 4px 60px;
+                  cursor: pointer;
                 "
               >
                 ไม่
-              </button>
+              </p>
             </div>
           </div>
           <div id="timedYes" style="display: none">
@@ -363,6 +364,7 @@
                   margin-left: 350px;
                   margin-top: 8.5px;
                   text-align: right;
+                  z-index: 4;
                 "
               >
                 เยี่ยมเลย!
@@ -375,6 +377,7 @@
                   margin-left: 350px;
                   margin-top: 8.5px;
                   text-align: center;
+                  z-index: 4;
                 "
               >
                 ยอมรับและให้คุณค่า
@@ -387,6 +390,7 @@
                   margin-left: 350px;
                   margin-top: 8.5px;
                   text-align: center;
+                  z-index: 4;
                 "
               >
                 แก่การทำงานบ้าน
@@ -399,6 +403,7 @@
                   top: 265px;
                   margin-left: 154px;
                   margin-top: 8.5px;
+                  z-index: 4;
                 "
               >
                 ต้องยอมรับและให้คุณค่าต่อการดูแลและการทํางานบ้านแบบไม่ได้<br />รับค่าจ้าง
@@ -415,6 +420,7 @@
                   top: 480px;
                   margin-left: 154px;
                   margin-top: 8.5px;
+                  z-index: 4;
                 "
               >
                 รวมถึงการขจัดความคิดที่ว่าด้วยการให้เพศหญิงต้องเป็น<br />คนที่ทํางานบ้านเพียงคนเดียว
@@ -516,19 +522,22 @@
         |||   scripts   ||| 
     -->
     <!-- icons -->
-    <script src="https://kit.fontawesome.com/3437ca9b77.js"></script>
+  <script src="https://kit.fontawesome.com/3437ca9b77.js"></script>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script/bootstrap.min.js"></script>
+  <!-- jquery -->
+  <script src="script/jquery-3.5.1.min.js"></script>
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="script/jquery-3.5.1.js"></script>
+  <!-- jquery-ui -->
+  <script src="script/jquery-ui.js"></script>
 
-    <!-- fullpage.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-    <script src="script/fullpage.js"></script>
+  <!-- fullpage.js -->
+  <script src="script/fullpage.js"></script>
+
+  <!-- isOnScreen -->
+  <script src="script/jquery.isonscreen.js"></script>
+
+  <!-- bootstrap -->
+  <script src="script/bootstrap.js"></script>
 
     <!-- universal script -->
     <script>
@@ -538,6 +547,18 @@
         //options here
         autoScrolling: true,
         scrollHorizontally: true,
+      });
+      $(document).ready(function () {
+        $(".fp-controlArrow").click(function () {
+          if ($(".slideBeforeLock").isOnScreen()) {
+            $(".fp-controlArrow").css({"border-style": "none"});
+          }
+          if ($(".slideBeforeTimer").isOnScreen()) {
+            $(".fp-controlArrow").css({"border-style": "none"});
+            cdreset();
+          }
+        });
+        cddisplay();
       });
 
       // Credit
@@ -554,19 +575,66 @@
       $(".fade4").delay(1500).slideDown(3000);
 
       //   timer
+      var CCOUNT = 10;
+
+      var t, count;
+
+      function cddisplay() {
+        // displays time in span
+        count = (count < 10) ? '0' + count : count;
+        $("#timer").html("00 : "+ count);
+        $("#pog").val(count);
+      }
+
+      function countdown() {
+        // starts countdown
+        cddisplay();
+        if (count == 0) {
+          // time is up
+          cdpause();
+          $("#timedQuiz").fadeOut();
+          $("#timedNo").fadeIn(1000);
+        } else {
+          count--;
+          t = setTimeout("countdown()", 1000);
+        }
+      }
+
+      function cdpause() {
+        // pauses countdown
+        clearTimeout(t);
+      }
+
+      function cdreset() {
+        // resets countdown
+        cdpause();
+        count = CCOUNT;
+        cddisplay();
+        countdown();
+      }
 
       // Button press
+      $("#pause").click(function () {
+        cdpause();
+      });
+      $("#reset").click(function () {
+        cdreset();
+      });
+
       $(".q1-yes").click(function () {
+        cdpause();
         $("#timedQuiz").fadeOut();
         $("#timedYes").fadeIn(1000);
       });
       $(".q1-no").click(function () {
+        cdpause();
         $("#timedQuiz").fadeOut();
         $("#timedNo").fadeIn(1000);
       });
       $(".q1-retry").click(function () {
         $("#timedNo").fadeOut();
         $("#timedQuiz").fadeIn(1000);
+        cdreset();
       });
     </script>
   </body>

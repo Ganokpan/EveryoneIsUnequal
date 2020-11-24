@@ -202,6 +202,26 @@ body{
   opacity: 1;
 }
 
+progress {
+  color: var(--ci2);
+}
+
+progress::-webkit-progress-value {
+  background: var(--ci5);
+}
+
+progress::-moz-progress-bar {
+  background: var(--ci2);
+}
+
+progress::-webkit-progress-value {
+  background: var(--ci5);
+}
+
+progress::-webkit-progress-bar {
+  background: var(--ci2);
+}
+
 @keyframes main3down1{
   from {top: -125px;}
   to {top: 88px;}
