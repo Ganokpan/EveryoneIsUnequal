@@ -10,12 +10,6 @@
     transform: scale(.97);
     transition: transform .2s;
 }
-.flip{
-    transform: rotateY(180deg);
-}
-.front{
-    backface-visibility: hidden;
-}
 
 /* Cloth */
 .draggable {

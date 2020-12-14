@@ -38,7 +38,7 @@
             transition: transform .2s;
         }
         .flip{
-            transform: rotateY(180deg);
+            transform: scale(1);
         }
         .front{
             backface-visibility: hidden;
@@ -97,6 +97,17 @@
               >
                 จงเลือกจับคู่ไพ่ระหว่างเพศ กับ อาชีพที่เหมาะสม
               </p>
+              <p
+                class="cl-red"
+                style="
+                  position: relative;
+                  top: 215px;
+                  margin: auto;
+                  text-align: center;
+                "
+              >
+                คลิกที่ไพ่ของคนกับอาชีพเพื่อจับคู่
+              </p>
               <div class="matching">
                   <div
                   style="
@@ -107,7 +118,7 @@
                       margin-left: 207px;
                   "
                   >
-                  <img
+                  <img class="gamecard front" data-framework="man"
                       src="img/main2/2-3-4 page/png element/2-3-2.png"
                       style="width: 130px; height: 170px"
                   />
@@ -121,7 +132,7 @@
                       margin-left: 207px;
                   "
                   >
-                  <img
+                  <img class="gamecard front" data-framework="woman"
                       src="img/main2/2-3-4 page/png element/2-3-3.png"
                       style="width: 130px; height: 170px"
                   />
@@ -135,7 +146,7 @@
                       margin-left: 371px;
                   "
                   >
-                  <img
+                  <img class="gamecard front" data-framework="man"
                       src="img/main2/2-3-4 page/png element/2-3.png"
                       style="width: 130px; height: 170px"
                   />
@@ -149,7 +160,7 @@
                       margin-left: 688px;
                   "
                   >
-                  <img
+                  <img class="gamecard front" data-framework="job"
                       src="img/main2/2-3-4 page/png element/2-3-4.png"
                       style="width: 130px; height: 170px"
                   />
@@ -163,78 +174,8 @@
                       margin-left: 688px;
                   "
                   >
-                  <img
+                  <img class="gamecard front" data-framework="job"
                       src="img/main2/2-3-4 page/png element/2-3-5.png"
-                      style="width: 130px; height: 170px"
-                  />
-                  </div>
-                  <div
-                  style="
-                      width: 130px;
-                      height: 170px;
-                      position: absolute;
-                      top: 273px;
-                      margin-left: 207px;
-                  "
-                  >
-                  <img class="gamecard front" data-framework="man"
-                      src="img/main2/2-3-4 page/png element/2-4.png"
-                      style="width: 130px; height: 170px"
-                  />
-                  </div>
-                  <div
-                  style="
-                      width: 130px;
-                      height: 170px;
-                      position: absolute;
-                      top: 464px;
-                      margin-left: 207px;
-                  "
-                  >
-                  <img class="gamecard front" data-framework="woman"
-                      src="img/main2/2-3-4 page/png element/2-4.png"
-                      style="width: 130px; height: 170px"
-                  />
-                  </div>
-                  <div
-                  style="
-                      width: 130px;
-                      height: 170px;
-                      position: absolute;
-                      top: 367px;
-                      margin-left: 371px;
-                  "
-                  >
-                  <img class="gamecard front" data-framework="man"
-                      src="img/main2/2-3-4 page/png element/2-4.png"
-                      style="width: 130px; height: 170px"
-                  />
-                  </div>
-                  <div
-                  style="
-                      width: 130px;
-                      height: 170px;
-                      position: absolute;
-                      top: 273px;
-                      margin-left: 688px;
-                  "
-                  >
-                  <img class="gamecard front" data-framework="job"
-                      src="img/main2/2-3-4 page/png element/2-4.png"
-                      style="width: 130px; height: 170px"
-                  />
-                  </div>
-                  <div
-                  style="
-                      width: 130px;
-                      height: 170px;
-                      position: absolute;
-                      top: 464px;
-                      margin-left: 688px;
-                  "
-                  >
-                  <img class="gamecard front" data-framework="job"
-                      src="img/main2/2-3-4 page/png element/2-4.png"
                       style="width: 130px; height: 170px"
                   />
                   </div>
@@ -342,7 +283,7 @@
       function flipCard(){
           if (lockBoard) return;
           if (this === firstCard) return;
-          this.classList.toggle("flip");
+          this.style.transform = "scale(1.1)";
           if (!hasFlippedCard) {
             hasFlippedCard = true;
             firstCard = this;
@@ -364,20 +305,27 @@
       function disableCard(){
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
+
+        firstCard.style.transition = "transform 1s";
+        firstCard.style.transform = "scale(0)";
+        
+        secondCard.style.transition = "transform 1s";
+        secondCard.style.transform = "scale(0)";
+        
         matchedCard++;
         if (matchedCard == 2) {
-            $("#cardQuiz").fadeOut(1000);
-            $("#cardAns").fadeIn(1000);
+            $("#cardQuiz").fadeOut(3000);
+            $("#cardAns").fadeIn(3000);
         }
       }
 
       function unflipCard(){
         lockBoard = true;
         setTimeout(() => {
-                    firstCard.classList.remove("flip");
-                    secondCard.classList.remove("flip");
-                    lockBoard = false;
-                }, 500);
+          firstCard.style.transform = "scale(1)";
+          secondCard.style.transform = "scale(1)";
+          lockBoard = false;
+        }, 500);
       }
 
       cards.forEach(card => card.addEventListener("click", flipCard));

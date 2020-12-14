@@ -9,7 +9,7 @@ $(".droppable").droppable({
   },
 });
 
-// Cards
+// Card game
 const cards = document.querySelectorAll(".gamecard");
 
 let matchedCard = 0;
@@ -17,52 +17,55 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-function flipCard() {
-  if (lockBoard) return;
-  if (this === firstCard) return;
-  this.classList.toggle("flip");
-  if (!hasFlippedCard) {
-    hasFlippedCard = true;
-    firstCard = this;
-  } else {
-    hasFlippedCard = false;
-    secondCard = this;
+function flipCard(){
+    if (lockBoard) return;
+    if (this === firstCard) return;
+    this.style.transform = "scale(1.1)";
+    if (!hasFlippedCard) {
+      hasFlippedCard = true;
+      firstCard = this;
+    } else {
+      hasFlippedCard = false;
+      secondCard = this;
 
-    checkForMatch();
-  }
+      checkForMatch();
+    }
 }
-function checkForMatch() {
-  if (
-    (firstCard.dataset.framework == "man" &&
-      secondCard.dataset.framework == "job") ||
-    (firstCard.dataset.framework == "job" &&
-      secondCard.dataset.framework == "man")
-  ) {
-    disableCard();
-  } else {
-    unflipCard();
-  }
+function checkForMatch(){
+  if ((firstCard.dataset.framework == "man" && secondCard.dataset.framework == "job") ||
+      (firstCard.dataset.framework == "job" && secondCard.dataset.framework == "man")){
+          disableCard()
+      } else {
+          unflipCard()
+      }
 }
-function disableCard() {
+function disableCard(){
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
+
+  firstCard.style.transition = "transform 1s";
+  firstCard.style.transform = "scale(0)";
+  
+  secondCard.style.transition = "transform 1s";
+  secondCard.style.transform = "scale(0)";
+  
   matchedCard++;
   if (matchedCard == 2) {
-    $("#cardQuiz").fadeOut(2000);
-    $("#cardAns").delay(2000).fadeIn(2000);
+      $("#cardQuiz").fadeOut(3000);
+      $("#cardAns").fadeIn(3000);
   }
 }
 
-function unflipCard() {
+function unflipCard(){
   lockBoard = true;
   setTimeout(() => {
-    firstCard.classList.remove("flip");
-    secondCard.classList.remove("flip");
+    firstCard.style.transform = "scale(1)";
+    secondCard.style.transform = "scale(1)";
     lockBoard = false;
   }, 500);
 }
 
-cards.forEach((card) => card.addEventListener("click", flipCard));
+cards.forEach(card => card.addEventListener("click", flipCard));
 
 //Game 1-4
 $(".b3").click(function () {
